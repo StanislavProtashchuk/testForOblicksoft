@@ -3,11 +3,11 @@ import Notiflix from 'notiflix';
 
 const value = document.querySelector(".search-form");
 const reset = document.querySelector(".reset");
-const foo = "";
+
 let inputValue = "";
 
 value.addEventListener("submit", onFormSubmit);
-reset.addEventListener("click", onReset);
+reset.addEventListener("click", onFormReset);
 
 function onFormSubmit(e) {
     e.preventDefault();
@@ -22,6 +22,6 @@ function onFormSubmit(e) {
     }
 }
 
-function onReset(){
-    inputValue = "";
+function onFormReset(e) {
+    inputValue.reset();
 }
