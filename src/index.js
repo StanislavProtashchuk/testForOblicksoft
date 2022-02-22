@@ -22,6 +22,6 @@ function onFormSubmit(e) {
     }
 }
 
-function onFormReset(e) {
-    inputValue.reset();
+function onFormReset() {
+    value.reset();
 }
